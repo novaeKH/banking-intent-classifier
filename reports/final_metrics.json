@@ -1,0 +1,6 @@
+{
+  "selected_model": "distilbert",
+  "validation_macro_f1": 0.881843813327961,
+  "test_accuracy": 0.8892857142857142,
+  "test_macro_f1": 0.886376183394293
+}

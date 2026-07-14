@@ -1,0 +1,8 @@
+{
+  "model": "distilbert",
+  "validation_accuracy": 0.8915,
+  "validation_macro_f1": 0.881843813327961,
+  "training_seconds": 100.62520119998953,
+  "trainable_parameters": 67012685,
+  "pretrained_model": "distilbert/distilbert-base-uncased"
+}

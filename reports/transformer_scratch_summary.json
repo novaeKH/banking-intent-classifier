@@ -1,0 +1,7 @@
+{
+  "model": "transformer_scratch",
+  "validation_accuracy": 0.8235,
+  "validation_macro_f1": 0.8240732026024855,
+  "training_seconds": 19.481203299976187,
+  "trainable_parameters": 456013
+}
