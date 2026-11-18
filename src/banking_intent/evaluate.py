@@ -18,7 +18,7 @@ def main():
     arguments = parser.parse_args()
     root = Path.cwd()
     torch.set_num_threads(4)
-    report = root / "reports/portfolio"
+    report = root / "reports/evaluation"
     splits = prepare_splits(root / "data/raw")
     pd.DataFrame(
         [
@@ -27,7 +27,7 @@ def main():
         ]
     ).to_csv(report / "split_summary.csv", index=False)
 
-    directory = root / "models/portfolio"
+    directory = root / "models/trained"
     model = AutoModelForSequenceClassification.from_pretrained(directory / "distilbert")
     tokenizer = AutoTokenizer.from_pretrained(directory / "distilbert")
     pipeline = joblib.load(directory / "tfidf.joblib")
@@ -80,10 +80,7 @@ def main():
     )
     errors.sample(n=60, random_state=42).reset_index().rename(
         columns={"index": "test_row"}
-    ).to_csv(
-        report / "error_candidates.csv",
-        index=False,
-    )
+    ).to_csv(report / "error_candidates.csv", index=False)
     print(pd.DataFrame(latency).to_string(index=False))
     print(
         pd.concat(ood_rows).groupby(["model", "group"]).accepted.agg(["count", "sum"])

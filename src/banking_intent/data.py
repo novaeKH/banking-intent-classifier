@@ -15,16 +15,10 @@ def prepare_splits(raw_dir: Path) -> dict[str, pd.DataFrame]:
     overlap = normalize(train["text"]).isin(set(normalize(test["text"])))
     train = train.loc[~overlap].reset_index(drop=True)
     train, validation = train_test_split(
-        train,
-        test_size=0.2,
-        stratify=train["category"],
-        random_state=42,
+        train, test_size=0.2, stratify=train["category"], random_state=42
     )
     tune, policy = train_test_split(
-        validation,
-        test_size=0.5,
-        stratify=validation["category"],
-        random_state=42,
+        validation, test_size=0.5, stratify=validation["category"], random_state=42
     )
     return {
         name: frame.reset_index(drop=True)

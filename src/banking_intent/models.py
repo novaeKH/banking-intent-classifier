@@ -87,14 +87,9 @@ def train_distilbert(train, tune, output_dir: Path, device: str):
         id2label={index: label for label, index in label_to_id.items()},
     ).to(device)
     train_loader = DataLoader(
-        TextDataset(train, tokenizer, label_to_id),
-        batch_size=16,
-        shuffle=True,
+        TextDataset(train, tokenizer, label_to_id), batch_size=16, shuffle=True
     )
-    tune_loader = DataLoader(
-        TextDataset(tune, tokenizer, label_to_id),
-        batch_size=16,
-    )
+    tune_loader = DataLoader(TextDataset(tune, tokenizer, label_to_id), batch_size=16)
     optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5, weight_decay=0.01)
     history, best_f1 = [], -np.inf
     started = time.perf_counter()

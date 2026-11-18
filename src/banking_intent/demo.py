@@ -9,8 +9,8 @@ from banking_intent.models import predict_distilbert
 
 
 def route_message(text: str, model_name: str = "distilbert") -> dict:
-    directory = Path("models/portfolio")
-    thresholds = json.loads(Path("reports/portfolio/thresholds.json").read_text())
+    directory = Path("models/trained")
+    thresholds = json.loads(Path("reports/evaluation/thresholds.json").read_text())
     if model_name == "tfidf":
         model = joblib.load(directory / "tfidf.joblib")
         probabilities = model.predict_proba([text])[0]

@@ -4,7 +4,7 @@
 ответов оператору. Сравниваю TF-IDF + Logistic Regression и fine-tuning
 DistilBERT: качество, долю автоматической обработки, ошибки и скорость на CPU.
 
-## Результат нового запуска
+## Результаты
 
 Официальный test: **3 080 обращений**. Параметры модели и порог выбираются
 на разных частях validation.
@@ -65,7 +65,7 @@ tune macro F1. Модель обучена на Apple M4 через MPS; апп�
 
 ## Разбор ошибок
 
-В `reports/portfolio/error_review.csv` разобраны 60 ошибок DistilBERT,
+В `reports/evaluation/error_review.csv` разобраны 60 ошибок DistilBERT,
 выбранных случайно с seed=42: 26 случаев с нехваткой контекста, 12 с близкими
 интентами, 10 с пропущенной явной подсказкой, 7 со спорной меткой и 5 с
 несколькими намерениями. Комментарии подготовлены с помощью ИИ; это
@@ -83,11 +83,31 @@ tune macro F1. Модель обучена на Apple M4 через MPS; апп�
 notebooks/01–05       первое сравнение TF-IDF, Transformer с нуля и DistilBERT
 notebooks/06_*        новый эксперимент: маршрутизация, ошибки и скорость
 src/banking_intent/   данные, обучение, пороги, оценка и командная демонстрация
-reports/portfolio/   новые метрики, предсказания, разбор ошибок и параметры
-docs/INTERVIEW_RU.md  рассказ на пять минут и вопросы по проекту
+reports/evaluation/   новые метрики, предсказания, разбор ошибок и параметры
 ```
 
 Первое исследование сохранено с исходными результатами: test macro F1
 DistilBERT 0.8864, validation macro F1 Transformer с нуля 0.8241. Новый запуск
 использует отдельную policy-часть и заново обученную модель. Разницу между
 старым и новым F1 нельзя считать эффектом новой архитектуры.
+
+## Воспроизведение
+
+Использован Python 3.11. Скачать `train.csv` и `test.csv`
+из [banking_data](https://github.com/PolyAI-LDN/task-specific-datasets/tree/master/banking_data)
+в `data/raw/`. Веса DistilBERT при первом запуске скачиваются с Hugging Face.
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+export PYTHONPATH=src
+python -m banking_intent.experiment
+python -m banking_intent.evaluate
+python -m banking_intent.demo "My card has not arrived yet"
+```
+
+Обученные модели сохраняются в `models/trained/` и исключены из Git.
+Ноутбук `06_routing_and_latency.ipynb` строит таблицы и графики из сохранённых
+отчётов, поэтому его можно выполнить без повторного обучения. Ноутбуки 01–05
+содержат первоначальное исследование, включая Transformer с нуля.
