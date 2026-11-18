@@ -51,8 +51,8 @@ def benchmark(predict, texts, batch_size, repeats=50):
 
 def main():
     root = Path.cwd()
-    report = root / "reports/portfolio"
-    model_dir = root / "models/portfolio"
+    report = root / "reports/evaluation"
+    model_dir = root / "models/trained"
     report.mkdir(parents=True, exist_ok=True)
     model_dir.mkdir(parents=True, exist_ok=True)
     torch.set_num_threads(4)
@@ -88,10 +88,7 @@ def main():
     pipeline = candidates[scores.iloc[0]["ngrams"]]
     joblib.dump(pipeline, model_dir / "tfidf.joblib")
     model, tokenizer, history, training_seconds = train_distilbert(
-        splits["train"],
-        splits["tune"],
-        model_dir / "distilbert",
-        device,
+        splits["train"], splits["tune"], model_dir / "distilbert", device
     )
     history.to_csv(report / "distilbert_history.csv", index=False)
     categories = [model.config.id2label[i] for i in range(model.config.num_labels)]
@@ -116,8 +113,7 @@ def main():
                     "model": name,
                     "split": split,
                     **classification_metrics(
-                        frame["category"],
-                        predictions[split]["predicted_category"],
+                        frame["category"], predictions[split]["predicted_category"]
                     ),
                 }
             )
