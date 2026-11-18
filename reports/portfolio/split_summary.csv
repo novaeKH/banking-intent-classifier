@@ -1,0 +1,5 @@
+split,rows,classes
+train,7996,77
+tune,1000,77
+policy,1000,77
+test,3080,77

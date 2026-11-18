@@ -1,0 +1,8 @@
+{
+  "sample_size": 60,
+  "sampling_seed": 42,
+  "split": "official test",
+  "method": "One-pass qualitative review with AI assistance; subjective categories, not corrected ground truth",
+  "predictions_sha256": "2b71f519c5877e93e047e6c48a54443434f18acf64e05ec0f02f7392f8ff5505",
+  "model_or_threshold_changed_after_review": false
+}

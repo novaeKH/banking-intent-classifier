@@ -1,0 +1,61 @@
+test_row,text,category,predicted_category,confidence
+1796,"I am waiting patiently for a week now for the seller to get back to me and there has been no response, could you please help me further with getting my money back.  Thank you.",Refund_not_showing_up,reverted_card_payment?,0.5714931
+2343,How can I perform a dual money transferring from one account to another?,transfer_into_account,receiving_money,0.13261794
+1191,what is the identity check?,why_verify_identity,verify_my_identity,0.4424463
+2523,My non-physical card will not work,virtual_card_not_working,card_not_working,0.75534874
+662,So I just put my top-up into the card and it hasn't changed.,pending_top_up,top_up_failed,0.3370474
+189,"I am a new customer, and I happened to look at my app and there is a charge I am not familiar with.  Could you tell me why the extra charge is there?",extra_charge_on_statement,direct_debit_payment_not_recognised,0.28361043
+1296,Am I allowed to use any card to make a payment?,visa_or_mastercard,card_acceptance,0.29063693
+2323,"I don't understand how to top up my account, can you please explain the process?",transfer_into_account,topping_up_by_card,0.78461236
+2649,Why didn`t my topup go through?,top_up_failed,pending_top_up,0.42794174
+428,What currency's can i exchange for?,exchange_via_app,fiat_currency_support,0.6553028
+138,Why am I being charged more ?,card_payment_wrong_exchange_rate,card_payment_fee_charged,0.666814
+1107,I have an unauthorized transaction on my statement,card_payment_not_recognised,direct_debit_payment_not_recognised,0.27706215
+562,what is required documents for new card process ?,contactless_not_working,card_about_to_expire,0.66514134
+1756,My card is being declined online. Could you tell me what might be broken or wrong with the account?,declined_transfer,declined_card_payment,0.67418784
+1259,what is the process for setting up a pin,get_physical_card,change_pin,0.54195386
+583,The NFC payment wouldn't work on the bus today. Help?,contactless_not_working,declined_card_payment,0.44785506
+1338,"i know i entered the right info, but my top up isn't in my balance",topping_up_by_card,pending_top_up,0.5834933
+1922,I was retrieving money and my card wouldn't remove.,card_swallowed,reverted_card_payment?,0.2962874
+2761,whats your exchange rate,exchange_charge,exchange_rate,0.80208915
+2701,I transferred some money but it is yet to arrive.,balance_not_updated_after_bank_transfer,transfer_not_received_by_recipient,0.30477348
+1501,"I am seeing a weird payment showing up that I know I did not make, how can I get it cancelled?",direct_debit_payment_not_recognised,reverted_card_payment?,0.3754681
+2653,Why would my topup not go through?,top_up_failed,pending_top_up,0.6110319
+2675,"I really need money from my card today, but my card is getting declined. Please help!!",top_up_failed,declined_card_payment,0.5430762
+351,Can I be topped up once I hit a certain balance?,automatic_top_up,top_up_limits,0.27224818
+1485,"im so mad right now. theres several charges that I think my x boyfriend made on my card. the companys on the website wouldn't refund me my money, they told me to contact my bank. DO something please.",direct_debit_payment_not_recognised,transaction_charged_twice,0.28204784
+2745,I need to cancel my card that got stolen a little while ago. Someone has already taken some money out and I don't want them to take anymore. Can you please do that?,cash_withdrawal_not_recognised,lost_or_stolen_card,0.35870233
+2558,How do I make my virtual card work?,virtual_card_not_working,getting_virtual_card,0.34018052
+851,Where is the transfer I started?,transfer_not_received_by_recipient,balance_not_updated_after_bank_transfer,0.32490465
+2407,Can I have a card after my first one?,getting_spare_card,order_physical_card,0.31739235
+1187,I won't verify my identity.,why_verify_identity,unable_to_verify_identity,0.7281743
+1419,"I see random purchases to my account, was it hacked?",compromised_card,card_payment_not_recognised,0.2188304
+2746,How do I cancel my card? There are charges on my account that I didn't make.,cash_withdrawal_not_recognised,card_payment_not_recognised,0.51037395
+1958,WTF??? I tried to withdraw some money at a Metro bank on High St. Kensington and without any notice it disappeared in the machine. The bank was already closed so I couldn't do anything. How do I get it back?,card_swallowed,cash_withdrawal_not_recognised,0.51059294
+551,Can I reactivate my PIN?,pin_blocked,get_physical_card,0.47034666
+283,How long will it take to get to me?,card_delivery_estimate,transfer_timing,0.32572407
+1730,The card got declined twice when I tried to use it to buy something online yesterday.,declined_transfer,declined_card_payment,0.33087245
+873,When will my funds transfer?,transfer_not_received_by_recipient,transfer_timing,0.4998294
+996,Will filling stations accept my card?,card_acceptance,topping_up_by_card,0.15001865
+345,Can I space out how often money is transferred along my travels?,automatic_top_up,transfer_timing,0.2259798
+636,What us the fee to transfer money from my bank?,top_up_by_bank_transfer_charge,transfer_fee_charged,0.54465014
+1004,"Hi, i don't know what's going on i've just paid for my top up twice by accident can you help me get a refund please.",top_up_reverted,transaction_charged_twice,0.83996314
+881,"I need support options, I want to top my card",supported_cards_and_currencies,topping_up_by_card,0.46470797
+1408,Someone is using my account to do online shopping! Please freeze it asap,compromised_card,terminate_account,0.3473203
+1215,The app will not let me into my account.,unable_to_verify_identity,terminate_account,0.4231305
+156,How can I check the exchange rate applied to my transaction?,card_payment_wrong_exchange_rate,exchange_rate,0.56476706
+2544,My card is just not working at this time.,virtual_card_not_working,card_not_working,0.80730796
+2711,My transfer is pending.,balance_not_updated_after_bank_transfer,pending_transfer,0.87667185
+893,Will you accept my other card?,supported_cards_and_currencies,card_acceptance,0.36207756
+2917,"When I got cash, I'm pretty sure there was a glitch that overcharged me.",cash_withdrawal_charge,wrong_exchange_rate_for_cash_withdrawal,0.69971496
+2417,"My daughter would like a card as well, how can we make this happen?",getting_spare_card,order_physical_card,0.47902033
+2295,Why hasn't my transfer been made?,failed_transfer,balance_not_updated_after_bank_transfer,0.3699698
+2561,I took out money from a transaction machine and it exchanged the wrong dollar value amount from another currency!,wrong_exchange_rate_for_cash_withdrawal,card_payment_wrong_exchange_rate,0.5284649
+717,I don't want the transaction to go through now,cancel_transfer,transfer_not_received_by_recipient,0.46585944
+962,Can I use my card for payment all over the world?,card_acceptance,supported_cards_and_currencies,0.2591593
+2438,"My child needs a card, how can I add them to the account I currently have?",getting_spare_card,order_physical_card,0.20723742
+2137,My new pin needs to be set.,change_pin,get_physical_card,0.4610535
+2534,Why can't I use my virtual card for subscription services?,virtual_card_not_working,getting_virtual_card,0.4138787
+1169,Do I have to do an identity check?,why_verify_identity,verify_my_identity,0.565664
+3035,Is there any way to verify who I am?,verify_my_identity,why_verify_identity,0.3996938
+1931,How can I get my card back out?,card_swallowed,lost_or_stolen_card,0.20093115

@@ -1,0 +1,81 @@
+text,group,model,predicted_category,confidence,accepted
+What will the weather be like tomorrow?,unrelated,tfidf,cancel_transfer,0.037755850967398516,False
+Can you recommend a vegetarian restaurant?,unrelated,tfidf,fiat_currency_support,0.05458951799610057,False
+How do I book a train ticket to Edinburgh?,unrelated,tfidf,exchange_via_app,0.07707555205748334,False
+My parcel has not arrived yet.,unrelated,tfidf,transfer_not_received_by_recipient,0.24328759353298024,False
+Can you help me reset my email password?,unrelated,tfidf,passcode_forgotten,0.4987087818847912,True
+How do I fix a leaking kitchen tap?,unrelated,tfidf,order_physical_card,0.03730084488451496,False
+What time does the museum open?,unrelated,tfidf,age_limit,0.07471821511382781,False
+Please translate this sentence into Spanish.,unrelated,tfidf,transfer_into_account,0.062289184105504325,False
+How do I make sourdough bread?,unrelated,tfidf,card_payment_not_recognised,0.06492159340916316,False
+The video keeps buffering on my television.,unrelated,tfidf,top_up_failed,0.06649096370147277,False
+I need to reschedule my dentist appointment.,unrelated,tfidf,edit_personal_details,0.12030092047386814,False
+Can you help me choose a laptop?,unrelated,tfidf,visa_or_mastercard,0.08030863760562125,False
+Why is my mobile signal so weak?,unrelated,tfidf,why_verify_identity,0.07964606146749535,False
+I want to return a shirt I bought online.,unrelated,tfidf,request_refund,0.5082645052974238,True
+How much luggage can I take on the flight?,unrelated,tfidf,top_up_limits,0.06409261484795789,False
+I forgot the password to my game account.,unrelated,tfidf,passcode_forgotten,0.5862440239452122,True
+Can you explain photosynthesis?,unrelated,tfidf,fiat_currency_support,0.06137723017179183,False
+How can I train for a half marathon?,unrelated,tfidf,request_refund,0.03648007452901517,False
+Please cancel my streaming subscription.,unrelated,tfidf,cancel_transfer,0.20222031737856172,False
+Where can I buy tickets for the concert?,unrelated,tfidf,verify_source_of_funds,0.04093675045311975,False
+Can I apply for a mortgage through your bank?,unsupported_banking,tfidf,failed_transfer,0.07475089568493203,False
+I would like to refinance my home loan.,unsupported_banking,tfidf,request_refund,0.05176298959334673,False
+What interest rate would I pay on a car loan?,unsupported_banking,tfidf,wrong_exchange_rate_for_cash_withdrawal,0.09924048706089574,False
+How do I claim on my travel insurance?,unsupported_banking,tfidf,exchange_rate,0.0342341867316392,False
+Please renew my home insurance policy.,unsupported_banking,tfidf,request_refund,0.0617000781805869,False
+Can I open a business account for my company?,unsupported_banking,tfidf,age_limit,0.1488324967972865,False
+How can I pay a cheque into my account?,unsupported_banking,tfidf,top_up_by_cash_or_cheque,0.2578600369647829,False
+Can I rent a safe deposit box at a branch?,unsupported_banking,tfidf,balance_not_updated_after_cheque_or_cash_deposit,0.061751336199871665,False
+How do I transfer my pension to your bank?,unsupported_banking,tfidf,transfer_into_account,0.6002885713879237,True
+I need a letter confirming my mortgage balance.,unsupported_banking,tfidf,balance_not_updated_after_bank_transfer,0.1493514163835639,False
+Could you arrange an appointment with a financial adviser?,unsupported_banking,tfidf,age_limit,0.078865279515872,False
+How do I set up a trust fund for my child?,unsupported_banking,tfidf,age_limit,0.06937312737614364,False
+I want to buy government bonds.,unsupported_banking,tfidf,request_refund,0.0749843977778467,False
+Can I trade options through your mobile app?,unsupported_banking,tfidf,exchange_via_app,0.045008978477934114,False
+How can I increase the credit limit on my business loan?,unsupported_banking,tfidf,top_up_limits,0.09615113297603936,False
+I need to report a death and close an estate account.,unsupported_banking,tfidf,terminate_account,0.33586796045425854,True
+Can you issue a bank guarantee for my company?,unsupported_banking,tfidf,transfer_into_account,0.05537277283019029,False
+What documents are needed for a student loan?,unsupported_banking,tfidf,verify_my_identity,0.1212945416447306,False
+Can you help me fill in my tax return?,unsupported_banking,tfidf,request_refund,0.095923048113719,False
+How do I change the beneficiary of my life insurance?,unsupported_banking,tfidf,beneficiary_not_allowed,0.18188094931952795,False
+What will the weather be like tomorrow?,unrelated,distilbert,transfer_timing,0.25864022970199585,False
+Can you recommend a vegetarian restaurant?,unrelated,distilbert,visa_or_mastercard,0.1301174759864807,False
+How do I book a train ticket to Edinburgh?,unrelated,distilbert,top_up_by_bank_transfer_charge,0.18772199749946594,False
+My parcel has not arrived yet.,unrelated,distilbert,transfer_not_received_by_recipient,0.486318439245224,False
+Can you help me reset my email password?,unrelated,distilbert,passcode_forgotten,0.8878521919250488,True
+How do I fix a leaking kitchen tap?,unrelated,distilbert,card_not_working,0.23630842566490173,False
+What time does the museum open?,unrelated,distilbert,transfer_not_received_by_recipient,0.2507293224334717,False
+Please translate this sentence into Spanish.,unrelated,distilbert,edit_personal_details,0.5206223130226135,True
+How do I make sourdough bread?,unrelated,distilbert,top_up_by_cash_or_cheque,0.2931061089038849,False
+The video keeps buffering on my television.,unrelated,distilbert,lost_or_stolen_phone,0.09595721960067749,False
+I need to reschedule my dentist appointment.,unrelated,distilbert,cancel_transfer,0.3234798312187195,False
+Can you help me choose a laptop?,unrelated,distilbert,automatic_top_up,0.41582611203193665,False
+Why is my mobile signal so weak?,unrelated,distilbert,lost_or_stolen_phone,0.811554491519928,True
+I want to return a shirt I bought online.,unrelated,distilbert,request_refund,0.843747079372406,True
+How much luggage can I take on the flight?,unrelated,distilbert,top_up_by_bank_transfer_charge,0.11929447203874588,False
+I forgot the password to my game account.,unrelated,distilbert,passcode_forgotten,0.9211301803588867,True
+Can you explain photosynthesis?,unrelated,distilbert,receiving_money,0.065289206802845,False
+How can I train for a half marathon?,unrelated,distilbert,age_limit,0.09627638757228851,False
+Please cancel my streaming subscription.,unrelated,distilbert,cancel_transfer,0.22835709154605865,False
+Where can I buy tickets for the concert?,unrelated,distilbert,top_up_by_card_charge,0.13771064579486847,False
+Can I apply for a mortgage through your bank?,unsupported_banking,distilbert,transfer_into_account,0.27119120955467224,False
+I would like to refinance my home loan.,unsupported_banking,distilbert,transfer_fee_charged,0.2971494495868683,False
+What interest rate would I pay on a car loan?,unsupported_banking,distilbert,exchange_charge,0.28898894786834717,False
+How do I claim on my travel insurance?,unsupported_banking,distilbert,supported_cards_and_currencies,0.14760929346084595,False
+Please renew my home insurance policy.,unsupported_banking,distilbert,cancel_transfer,0.19190366566181183,False
+Can I open a business account for my company?,unsupported_banking,distilbert,age_limit,0.5423832535743713,True
+How can I pay a cheque into my account?,unsupported_banking,distilbert,top_up_by_cash_or_cheque,0.8291512727737427,True
+Can I rent a safe deposit box at a branch?,unsupported_banking,distilbert,top_up_by_cash_or_cheque,0.36239907145500183,False
+How do I transfer my pension to your bank?,unsupported_banking,distilbert,receiving_money,0.6843339800834656,True
+I need a letter confirming my mortgage balance.,unsupported_banking,distilbert,balance_not_updated_after_bank_transfer,0.2597256898880005,False
+Could you arrange an appointment with a financial adviser?,unsupported_banking,distilbert,receiving_money,0.33016371726989746,False
+How do I set up a trust fund for my child?,unsupported_banking,distilbert,age_limit,0.8482334613800049,True
+I want to buy government bonds.,unsupported_banking,distilbert,receiving_money,0.2639017105102539,False
+Can I trade options through your mobile app?,unsupported_banking,distilbert,apple_pay_or_google_pay,0.15860944986343384,False
+How can I increase the credit limit on my business loan?,unsupported_banking,distilbert,receiving_money,0.25022122263908386,False
+I need to report a death and close an estate account.,unsupported_banking,distilbert,age_limit,0.2590414583683014,False
+Can you issue a bank guarantee for my company?,unsupported_banking,distilbert,age_limit,0.23735526204109192,False
+What documents are needed for a student loan?,unsupported_banking,distilbert,receiving_money,0.2689284682273865,False
+Can you help me fill in my tax return?,unsupported_banking,distilbert,request_refund,0.25465863943099976,False
+How do I change the beneficiary of my life insurance?,unsupported_banking,distilbert,beneficiary_not_allowed,0.7084555625915527,True
